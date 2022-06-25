@@ -1,4 +1,4 @@
-package commands;
+package commands.Moderation;
 
 import commandutils.Command;
 import commandutils.CommandContext;

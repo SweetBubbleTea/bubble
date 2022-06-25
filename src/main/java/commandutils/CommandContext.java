@@ -1,5 +1,6 @@
 package commandutils;
 
+import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.TextChannel;
@@ -21,12 +22,15 @@ public class CommandContext {
     //The arguments that was passed with the command
     private String[] args;
 
-    public CommandContext(Member member, TextChannel channel, Message message, String handler, String[] z) {
+    private Guild guild;
+
+    public CommandContext(Member member, TextChannel channel, Message message, String handler, String[] z, Guild guild) {
         this.member = member;
         this.channel = channel;
         this.message = message;
         this.handler = handler;
-        this.args = args;
+        this.args = z;
+        this.guild = guild;
     }
 
     public Member getMember() {
@@ -48,4 +52,6 @@ public class CommandContext {
     public String[] getArgs() {
         return args;
     }
+
+    public Guild getGuild() { return guild;}
 }

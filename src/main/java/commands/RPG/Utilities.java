@@ -1,4 +1,4 @@
-package commands;
+package commands.RPG;
 
 import SweetBubbleTea.Config;
 import classtypes.Class;

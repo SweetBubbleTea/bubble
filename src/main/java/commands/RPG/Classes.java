@@ -1,4 +1,4 @@
-package commands;
+package commands.RPG;
 
 import classtypes.ArcherClass;
 import classtypes.VanguardClass;

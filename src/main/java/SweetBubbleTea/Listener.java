@@ -30,7 +30,7 @@ public class Listener extends ListenerAdapter {
 
         String command = event.getMessage().getContentStripped().replace(prefix, "").split(" ")[0];
         String[] args = event.getMessage().getContentRaw().replace(prefix, "").replace(command, "").split(" ");
-        CommandContext context = new CommandContext(event.getMember(), event.getTextChannel(), event.getMessage(), command, args);
+        CommandContext context = new CommandContext(event.getMember(), event.getTextChannel(), event.getMessage(), command, args, event.getGuild());
 
         CommandManager.runCommand(context);
 

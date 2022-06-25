@@ -1,7 +1,11 @@
 package SweetBubbleTea;
 
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
-import commands.*;
+import commands.Miscellaneous.Avatar;
+import commands.Miscellaneous.Coin;
+import commands.Miscellaneous.Ping;
+import commands.Moderation.*;
+import commands.RPG.*;
 import commandutils.Command;
 import commandutils.CommandManager;
 import net.dv8tion.jda.api.JDA;
@@ -35,12 +39,25 @@ public class Bot {
             Arrays.asList(new Ping(),
                     new Avatar(),
                     new Invite(),
+                    new Coin(),
                     new Clear(),
                     new Timer(),
                     new Classes(waiter),
                     new Stats(),
                     new Xp(),
-                    new Level()
+                    new Level(),
+                    new Ban(),
+                    new Kick(),
+                    new Deafen(),
+                    new Unban(),
+                    new Undeafen(),
+                    new Unmute(),
+                    new Mute(),
+                    new AddRoles(),
+                    new RemoveRoles(),
+                    new Nicknames(),
+                    new Owner(),
+                    new Leave()
             ));
 
     public Bot(String token) {

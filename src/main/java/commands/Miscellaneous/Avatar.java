@@ -1,4 +1,4 @@
-package commands;
+package commands.Miscellaneous;
 
 import commandutils.Command;
 import commandutils.CommandContext;
@@ -9,7 +9,6 @@ import net.dv8tion.jda.api.entities.MessageEmbed;
 import java.util.List;
 
 public class Avatar implements Command {
-
 
     @Override
     public String getName() {

@@ -1,20 +1,18 @@
-package commands;
+package commands.RPG;
 
-import com.mongodb.client.model.Filters;
 import commandutils.Command;
 import commandutils.CommandContext;
 
-
-public class Level implements Command, Utilities {
+public class Xp implements Command, Utilities {
 
     @Override
     public String getName() {
-        return "level";
+        return "xp";
     }
 
     @Override
     public String getDescription() {
-        return "Obtain your current level";
+        return "Obtain your current xp level";
     }
 
     @Override
@@ -22,8 +20,8 @@ public class Level implements Command, Utilities {
         if (memberFind(context.getMember()) == null) {
             context.getChannel().sendMessage("You are currently not registered in a class.").queue();
         } else {
-            int level = getIntData(context.getMember(), "Level");
-            context.getChannel().sendMessage("You are level " + level + ".").queue();
+            int exp = getIntData(context.getMember(), "XP");
+            context.getChannel().sendMessage("You currently have " + exp + " XP.").queue();
         }
     }
 }

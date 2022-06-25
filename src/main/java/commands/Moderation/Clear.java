@@ -1,8 +1,9 @@
-package commands;
+package commands.Moderation;
 
 import commandutils.Command;
 import commandutils.CommandContext;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 
@@ -27,12 +28,16 @@ public class Clear implements Command {
 
         String[] args = context.getMessage().getContentRaw().split("\\s+");
 
-        if (args.length < 2) {
-            context.getChannel().sendMessageEmbeds(error("Error")).queue();
+        if (context.getMember().hasPermission(Permission.MESSAGE_MANAGE)) {
+            if (args.length < 2) {
+                context.getChannel().sendMessageEmbeds(error("Error")).queue();
+            } else {
+                List<Message> messages = context.getChannel().getHistory().retrievePast(Integer.parseInt(args[1] + 1)).complete();
+                context.getChannel().purgeMessages(messages);
+                context.getChannel().sendMessageEmbeds(error("Complete")).queue(msg -> msg.delete().queueAfter(5, TimeUnit.SECONDS));
+            }
         } else {
-            List<Message> messages = context.getChannel().getHistory().retrievePast(Integer.parseInt(args[1] + 1)).complete();
-            context.getChannel().deleteMessages(messages).queue();
-            context.getChannel().sendMessageEmbeds(error("Complete")).queue(msg -> msg.delete().queueAfter(5, TimeUnit.SECONDS));
+            context.getChannel().sendMessage("You do not have permission to clear messages!").queue();
         }
     }
 

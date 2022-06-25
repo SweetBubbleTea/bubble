@@ -1,4 +1,4 @@
-package commands;
+package commands.Miscellaneous;
 
 import commandutils.Command;
 import commandutils.CommandContext;

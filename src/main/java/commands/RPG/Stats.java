@@ -1,4 +1,4 @@
-package commands;
+package commands.RPG;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;

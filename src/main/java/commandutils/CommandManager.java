@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CommandManager {
 
-    private static final String PREFIX = "!";
+    private static final String PREFIX = Config.get("prefix");
 
     private static List<Command> commands = new ArrayList<>();
 
@@ -43,9 +43,7 @@ public class CommandManager {
     }
 
     public static void registerCommand(ArrayList<Command> commandAdded) {
-        for (Command command : commandAdded) {
-            commands.add(command);
-        }
+        commands.addAll(commandAdded);
     }
 
     public static String getPrefix() {
