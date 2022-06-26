@@ -1,7 +1,56 @@
+
 # Bubble
 
-##Discord Moderation & RPG Bot
-Bubble is a simple yet compacted bot that is designed to have 
-moderation, RPG functionalities, and many more. 
+Bubble is a simple yet compacted bot that is designed to have moderantion, RPG, and many more functionalities. 
 
-##
+
+
+## Installation
+
+Note, currently Bubble does have Administrative permissions. Invite Bubble into your server using: [Invite Link](https://discord.com/api/oauth2/authorize?client_id=987788631185977384&permissions=8&scope=bot). 
+
+
+## Commands
+
+#### Modernation
+- `!ban` - Ban a member in the server 
+- `!unban` - Unban a member in the server 
+- `!remove` - Remove a role from a member in the server 
+- `!nickname` - Change the nickname of a member in the server 
+- `!kick` - Kick a member in the server 
+- `!add` - Add a role to a member in the server 
+- `!mute` - Mute a member in the server 
+- `!unmute` - Unmute a member in the server 
+- `!deafen` - Deafen a member in the server 
+- And much more!
+
+#### RPG
+- `!class` - Enroll into a class (Currently 3)
+- `!stats` - Obtain the stats of your character 
+- `!xp` - Displays your current xp 
+- `!level` - Shows your current level 
+- And much more!
+
+#### Miscellaneous 
+- `!coin` - Flip a coin to determine heads or tails 
+- `!avatar` - Retrieve a member's avatar
+- `!timer` - Set a countdown timer in seconds 
+- `!user` - Retrieve stats about a member within a server 
+- `!8ball` - Get responses from the Magic 8 Ball 
+- And much more!
+## Screenshots
+
+![Classes](https://user-images.githubusercontent.com/94028330/175797336-d7f29ae7-22d3-4d36-bbab-f93980ff5150.png)
+
+![Stats](https://user-images.githubusercontent.com/94028330/175797166-d35214e8-95dd-4ea2-b9e6-3a6253ffaf11.png) 
+
+## Built With
+
+- [JDA](https://github.com/DV8FromTheWorld/JDA) - Utilized wrapper for the Discord API
+- [MongoDB](https://www.mongodb.com/) - A cross-platform document-oriented database program used to store RPG Discord data 
+- [Maven](https://maven.apache.org/) - Software project manager used to add Java dependencies 
+
+## Acknowledgements
+
+ - [MenuDocs](https://www.youtube.com/watch?v=dOmyJhB_feM&list=PLWnw41ah3I4YxBetY8iCa-b9t1JwV2jsW) - Utilized YouTube tutorials to mold the core of Bubble
+ - [Harry McCormack](https://github.com/haz8989) - Referenced the command manager for initialization 
