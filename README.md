@@ -46,7 +46,7 @@ Note, currently Bubble does have Administrative permissions. Invite Bubble into 
 
 ## Built With
 
-- [JDA](https://github.com/DV8FromTheWorld/JDA) - Utilized wrapper for the Discord API
+- [JDA](https://github.com/DV8FromTheWorld/JDA) - Wrapper for the Discord API
 - [MongoDB](https://www.mongodb.com/) - A cross-platform document-oriented database program used to store RPG Discord data 
 - [Maven](https://maven.apache.org/) - Software project manager used to add Java dependencies 
 
