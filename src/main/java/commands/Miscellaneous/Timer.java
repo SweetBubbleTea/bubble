@@ -1,4 +1,4 @@
-package commands.RPG;
+package commands.Miscellaneous;
 
 import commandutils.Command;
 import commandutils.CommandContext;
