@@ -32,7 +32,7 @@ public class Bot {
             GatewayIntent.GUILD_PRESENCES);
 
     List<ListenerAdapter> listenerAdapters =
-            List.of(new Listener());
+            List.of(new Listener(), new ExpSystem());
 
     List<Command> commands = List.of(new Ping(),
             new Avatar(),

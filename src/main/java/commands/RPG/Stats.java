@@ -43,7 +43,7 @@ public class Stats implements Command, Utilities {
         eb.addField("Attack", Integer.toString(doc.getInteger("Attack")), false);
         eb.addField("Defense", Integer.toString(doc.getInteger("Defense")), false);
         eb.addField("Weapon Type", doc.getString("Weapon"), false);
-        eb.addField("XP", doc.getInteger("Level") + "/" + doc.getInteger("Level Cap"), false);
+        eb.addField("XP", doc.getInteger("XP") + "/" + doc.getInteger("Level Cap"), false);
         return eb.build();
     }
 

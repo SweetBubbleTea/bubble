@@ -42,7 +42,7 @@ public class Classes implements Command, Utilities {
                             MessageReactionAddEvent.class,
                             (event) -> context.getMessage().getAuthor().equals(event.getUser()),
                             event -> {
-                                if (event.getReactionEmote().getName().equals(WARRIOR_EMOTE) && memberRegister(event.getMember())) {
+                                if (event.getReactionEmote().getName().equals(WARRIOR_EMOTE) && memberNotRegister(event.getMember())) {
                                     WarriorClass newWarrior = new WarriorClass(event.getUser().getIdLong());
                                     if (classSearch(newWarrior) == NOT_REGISTERED) {
                                         addHero(newWarrior);
@@ -55,7 +55,7 @@ public class Classes implements Command, Utilities {
                                         event.getChannel().sendMessage("You are already in the Warrior class.").queue();
                                         return;
                                     }
-                                } else if (event.getReactionEmote().getName().equals(ARCHER_EMOTE) && memberRegister(event.getMember())) {
+                                } else if (event.getReactionEmote().getName().equals(ARCHER_EMOTE) && memberNotRegister(event.getMember())) {
                                     ArcherClass newArcher = new ArcherClass(event.getUser().getIdLong());
                                     if (classSearch(newArcher) == NOT_REGISTERED) {
                                         addHero(newArcher);
@@ -68,7 +68,7 @@ public class Classes implements Command, Utilities {
                                         event.getChannel().sendMessage("You are already in the Archer class.").queue();
                                         return;
                                     }
-                                } else if (event.getReactionEmote().getName().equals(VANGUARD_EMOTE) && memberRegister(event.getMember())) {
+                                } else if (event.getReactionEmote().getName().equals(VANGUARD_EMOTE) && memberNotRegister(event.getMember())) {
                                     VanguardClass newVanguard = new VanguardClass(event.getUser().getIdLong());
                                     if (classSearch(newVanguard) == NOT_REGISTERED) {
                                         addHero(newVanguard);

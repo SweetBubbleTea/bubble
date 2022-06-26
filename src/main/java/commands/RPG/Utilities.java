@@ -113,7 +113,7 @@ public interface Utilities {
         }
     }
 
-    default boolean memberRegister(Member member) {
+    default boolean memberNotRegister(Member member) {
 
         Document found = timerCollection.find(Filters.in("User ID", Long.parseLong(member.getUser().getId()))).first();
 
@@ -122,5 +122,9 @@ public interface Utilities {
 
     default int getIntData(Member member, String data) {
         return memberFind(member).find(Filters.in("User ID", Long.parseLong(member.getUser().getId()))).first().getInteger(data);
+    }
+
+    default void setIntData(Member member, String field , int data) {
+        memberFind(member).updateOne(Filters.in("User ID", Long.parseLong(member.getUser().getId())), new Document("$set", new Document(field, data)));
     }
 }
