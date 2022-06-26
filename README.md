@@ -60,7 +60,7 @@ Note, currently Bubble does have Administrative permissions, and it is still bei
 
 MIT License
 
-Copyright (c) [2022] [Andy Zhao]
+Copyright (c) 2022 Andy Zhao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
