@@ -52,5 +52,5 @@ Note, currently Bubble does have Administrative permissions. Invite Bubble into 
 
 ## Acknowledgements
 
- - [MenuDocs](https://www.youtube.com/watch?v=dOmyJhB_feM&list=PLWnw41ah3I4YxBetY8iCa-b9t1JwV2jsW) - Utilized YouTube tutorials to mold the core of Bubble
- - [Harry McCormack](https://github.com/haz8989) - Referenced the command manager for initialization 
+ - [MenuDocs](https://www.youtube.com/watch?v=dOmyJhB_feM&list=PLWnw41ah3I4YxBetY8iCa-b9t1JwV2jsW) - Utilized YouTube tutorials to setup the core structure of Bubble
+ - [Harry McCormack](https://github.com/haz8989) - Referenced the command manager
