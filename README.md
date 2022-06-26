@@ -43,6 +43,8 @@ Note, currently Bubble does have Administrative permissions. Invite Bubble into 
 
 ![Stats](https://user-images.githubusercontent.com/94028330/175797166-d35214e8-95dd-4ea2-b9e6-3a6253ffaf11.png) 
 
+![XP](https://user-images.githubusercontent.com/94028330/175830271-56cc422b-7b50-4958-ae06-b9205a2a3996.png)
+
 ## Built With
 
 - [JDA](https://github.com/DV8FromTheWorld/JDA) - Wrapper for the Discord API
