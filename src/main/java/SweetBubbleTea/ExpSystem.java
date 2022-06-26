@@ -60,14 +60,14 @@ public class ExpSystem extends ListenerAdapter implements Utilities {
         int max = getLevelCap(member);
         int level = getLevel(member);
 
-        if (level % 5 == 0) {
-            setIntData(member, "Level Cap", 600);
-        } else if (level % 10 == 0) {
-            setIntData(member, "Level Cap", 1000);
+        if (level % 20 == 0) {
+            setIntData(member, "Level Cap", 2000);
         } else if (level % 15 == 0) {
             setIntData(member, "Level Cap", 1500);
-        } else if (level % 20 == 0) {
-            setIntData(member, "Level Cap", 2000);
+        } else if (level % 10 == 0) {
+            setIntData(member, "Level Cap", 1000);
+        } else if (level % 5 == 0) {
+            setIntData(member, "Level Cap", 600);
         }
 
         if (getPlayerExp(member) / max >= 1) {

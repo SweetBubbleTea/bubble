@@ -58,7 +58,8 @@ public class Bot {
             new Leave(),
             new EightBall(),
             new About(),
-            new User()
+            new User(),
+            new Birthday()
             );
 
     public Bot(String token) {
