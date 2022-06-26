@@ -22,6 +22,7 @@ public interface Utilities {
     MongoCollection<Document> warriorCollection = mongoDatabase.getCollection("Warrior");
     MongoCollection<Document> archerCollection = mongoDatabase.getCollection("Archer");
     MongoCollection<Document> vanguardCollection = mongoDatabase.getCollection("Vanguard");
+    MongoCollection<Document> birthdayCollection = mongoDatabase.getCollection("Birthday");
     MongoCollection<Document> timerCollection = mongoDatabase.getCollection("Timer");
 
     String WARRIOR_EMOTE = "⚔";
