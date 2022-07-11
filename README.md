@@ -1,7 +1,7 @@
 
 # Bubble
 
-Bubble is a simple yet compacted all-purpose Discord bot that is designed to have moderantion, RPG, and many more functionalities. 
+Bubble is a simple yet compacted all-purpose Discord bot that is designed to have moderation, RPG, and many more functionalities. 
 
 
 ## Installation
