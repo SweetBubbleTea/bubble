@@ -70,7 +70,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>me.sweetbubbletea.Bubble.Driver</mainClass>
+                            <mainClass>me.SweetBubbleTea.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
