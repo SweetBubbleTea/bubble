@@ -64,7 +64,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.SweetBubbleTea.Main</mainClass>
+                            <mainClass>SweetBubbleTea.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
