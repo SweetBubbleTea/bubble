@@ -16,7 +16,6 @@ import javax.security.auth.login.LoginException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.EnumSet;
-import java.util.List;
 
 
 public class Bot {
@@ -31,36 +30,39 @@ public class Bot {
             GatewayIntent.GUILD_MESSAGES,
             GatewayIntent.GUILD_PRESENCES);
 
-    List<ListenerAdapter> listenerAdapters =
-            List.of(new Listener(), new ExpSystem());
+    ArrayList<ListenerAdapter> listenerAdapters = new ArrayList<>(
+            Arrays.asList(new Listener(), new ExpSystem())
+    );
 
-    List<Command> commands = List.of(new Ping(),
-            new Avatar(),
-            new Invite(),
-            new Coin(),
-            new Clear(),
-            new Timer(),
-            new Classes(waiter),
-            new Stats(),
-            new Xp(),
-            new Level(),
-            new Ban(),
-            new Kick(),
-            new Deafen(),
-            new Unban(),
-            new Undeafen(),
-            new Unmute(),
-            new Mute(),
-            new AddRoles(),
-            new RemoveRoles(),
-            new Nicknames(),
-            new Owner(),
-            new Leave(),
-            new EightBall(),
-            new About(),
-            new User(),
-            new Birthday()
-            );
+    ArrayList<Command> commands = new ArrayList<>(
+            Arrays.asList(
+                    new Avatar(),
+                    new Invite(),
+                    new Coin(),
+                    new Clear(),
+                    new Timer(),
+                    new Classes(waiter),
+                    new Stats(),
+                    new Xp(),
+                    new Level(),
+                    new Ban(),
+                    new Kick(),
+                    new Deafen(),
+                    new Unban(),
+                    new Undeafen(),
+                    new Unmute(),
+                    new Mute(),
+                    new AddRoles(),
+                    new RemoveRoles(),
+                    new Nicknames(),
+                    new Owner(),
+                    new Leave(),
+                    new EightBall(),
+                    new About(),
+                    new User(),
+                    new Birthday()
+            )
+    );
 
     public Bot(String token) {
         this.token = token;
