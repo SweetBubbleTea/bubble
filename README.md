@@ -1,7 +1,7 @@
 
 # Bubble
 
-Bubble is a simple yet compacted all-purpose Discord bot that is designed to have moderantion, RPG, and many more functionalities. 
+Bubble is a simple yet compacted all-purpose Discord bot that is designed to have moderation, RPG, and many more functionalities. 
 
 
 ## Installation
@@ -36,6 +36,7 @@ Note, currently Bubble does have Administrative permissions, and it is still bei
 - `!timer` - Set a countdown timer in seconds 
 - `!user` - Retrieve stats about a member within a server 
 - `!8ball` - Get responses from the Magic 8 Ball 
+- `!bday` - Set and get the birthday of a member
 - And much more!
 ## Screenshots
 
