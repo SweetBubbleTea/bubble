@@ -70,7 +70,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>me.SweetBubbleTea.Main</mainClass>
+                            <mainClass>SweetBubbleTea.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
