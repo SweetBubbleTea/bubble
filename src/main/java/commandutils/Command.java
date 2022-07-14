@@ -4,17 +4,13 @@ import java.util.List;
 
 public interface Command {
 
-    public String getName();
+    String getName();
 
-    public String getDescription();
+    String getDescription();
 
-    default public List<String> getAliases() {
-        return List.of();
-    }
+    void onCommand(CommandContext context);
 
-    public void onCommand(CommandContext context);
-
-    public default boolean equals(Command command) {
+    default boolean equals(Command command) {
         return this.getName().equals(command.getName());
     }
 }
