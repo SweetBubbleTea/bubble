@@ -1,1 +1,1 @@
-web: java -jar target/discord_bot-1.0-SNAPSHOT.jar
+worker: java -jar target/discord_bot-1.0-SNAPSHOT-jar-with-dependencies.jar
